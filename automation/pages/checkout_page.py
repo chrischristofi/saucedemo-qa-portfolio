@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class CheckoutPage:
     def __init__(self, driver):
@@ -14,7 +16,9 @@ class CheckoutPage:
         self.confirmation_message = (By.CSS_SELECTOR, "[data-test='complete-header']")
 
     def click_checkout(self):
-        self.driver.find_element(*self.checkout).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(self.checkout)
+        ).click()
 
     def click_continue(self):
         self.driver.find_element(*self.continue_checkout).click()
