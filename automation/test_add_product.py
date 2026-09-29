@@ -22,5 +22,5 @@ def test_add_product(driver):
 
     products_page.remove_backpack()
 
-    product = driver.find_elements(By.CSS_SELECTOR, "[data-test='inventory-item-name']")
+    product = driver.find_elements(By.CSS_SELECTOR, "[data-test='cart-item']")
     assert len(product) == 0
