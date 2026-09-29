@@ -40,5 +40,7 @@ class CheckoutPage:
         self.driver.find_element(*self.finish).click()
 
     def get_confirmation_message(self):
-        confirmation_message = self.driver.find_element(*self.confirmation_message).text
+        confirmation_message = WebDriverWait(self.driver, 10).until(
+            EC.visibility_of_element_located(self.confirmation_message)
+        ).text
         return confirmation_message
