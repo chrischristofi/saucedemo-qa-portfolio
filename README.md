@@ -92,6 +92,9 @@ The automation suite covers:
 
 ```text
 saucedemo-qa-portfolio/
+├── .github/
+│   └── workflows/
+│       └── tests.yml
 ├── manual-testing/
 │   ├── test-plan.md
 │   ├── test-cases.md
@@ -125,6 +128,7 @@ saucedemo-qa-portfolio/
 - GitHub
 - Markdown
 
+```
 ## How to Run
 
 ### Install Dependencies
@@ -134,7 +138,15 @@ Install the required Python packages using:
 ```bash
 pip install -r requirements.txt
 ```
+```markdown
+### Run Automated Tests
 
+Run the following command from the project root:
+
+```bash
+pytest automation
+
+```
 ### Run All Automated Tests
 
 ```bash

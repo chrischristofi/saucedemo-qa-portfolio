@@ -34,7 +34,7 @@ This project focuses on manual testing of the SauceDemo e-commerce web applicati
 
 - Order completion and confirmation
 
-## Out of Scope
+## 4. Out of Scope
 
 - Performance and load testing
 
@@ -46,7 +46,7 @@ This project focuses on manual testing of the SauceDemo e-commerce web applicati
 
 - Cross-browser compatibility testing
 
-## 4. Testing Types
+## 5. Testing Types
 
 - Functional Testing — Verify that application features work according to expected behavior.
 
@@ -58,7 +58,7 @@ This project focuses on manual testing of the SauceDemo e-commerce web applicati
 
 - End-to-End Testing — Verify the complete user journey from login through order completion.
 
-## 5. Test Environment
+## 6. Test Environment
 
 - Application: SauceDemo
 
@@ -70,7 +70,7 @@ This project focuses on manual testing of the SauceDemo e-commerce web applicati
 
 - Testing Approach: Manual testing
 
-## 6. Defect Management
+## 7. Defect Management
 
 - Defect title
 
@@ -90,7 +90,7 @@ This project focuses on manual testing of the SauceDemo e-commerce web applicati
 
 Defects will be reported for further investigation and resolution.
 
-## 7. Entry and Exit Criteria
+## 8. Entry and Exit Criteria
 
 Entry Criteria
 
