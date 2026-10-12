@@ -20,6 +20,10 @@ class CheckoutPage:
             EC.element_to_be_clickable(self.checkout)
         ).click()
 
+        WebDriverWait(self.driver, 10).until(
+            EC.url_contains("checkout-step-one")
+        )
+
     def click_continue(self):
         self.driver.find_element(*self.continue_checkout).click()
 
