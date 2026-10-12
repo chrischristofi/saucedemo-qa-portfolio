@@ -25,7 +25,9 @@ class CheckoutPage:
         )
 
     def click_continue(self):
-        self.driver.find_element(*self.continue_checkout).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(self.continue_checkout)
+        ).click()
 
     def get_error_message(self):
         self.error_message = self.driver.find_element(*self.error_message).text
