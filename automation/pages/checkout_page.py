@@ -39,7 +39,9 @@ class CheckoutPage:
         self.driver.find_element(*self.zip_code).send_keys(zip_code)
 
     def get_summary_product_name(self):
-        product_name = self.driver.find_element(*self.summary_product_name).text
+        product_name = WebDriverWait(self.driver, 10).until(
+            EC.visibility_of_element_located(self.summary_product_name)
+        ).text
         return product_name
 
     def click_finish(self):
